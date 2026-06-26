@@ -26,8 +26,21 @@ Ce projet a été réalisé dans le but de démontrer mes compétences en dével
 *   **Templating :** Twig (optionnel/selon implémentation)
 *   **Outils :** Composer
 
-## ⚙️ Installation
+## ⚙️ Installation (Avec Docker)
+C'est la méthode recommandée. Elle configure automatiquement PHP 8.1, Apache, MySQL et importe la base de données.
+
 1. Cloner le dépôt : `git clone https://github.com/Marc-Alban/php-professional-blog.git`
-2. Installer les dépendances : `composer install`
-3. Configurer la base de données (importer le script SQL fourni).
-4. Lancer le serveur local PHP ou utiliser WAMP/XAMPP/Docker.
+2. Aller dans le dossier du projet : `cd php-professional-blog`
+3. Lancer l'environnement Docker :
+   ```bash
+   docker-compose up -d --build
+   ```
+4. Accéder au site sur `http://localhost:8080/`
+
+La base de données est automatiquement importée avec la structure requise au démarrage.
+
+## ⚙️ Installation (Manuelle - WAMP/XAMPP)
+1. Cloner le dépôt et placer les fichiers dans votre dossier `www` ou `htdocs`.
+2. Installer les dépendances : `cd Code && composer install`
+3. Renommer `Code/config.ini.info` en `Code/config.ini` et configurer vos identifiants de base de données.
+4. Importer le fichier `Sql/blog.sql` dans votre base MySQL.
