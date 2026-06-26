@@ -1,25 +1,33 @@
-# Créez votre premier blog en PHP
-Codacy Badge
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7d1ab7ae8a544209b8d85f7cf4aadb77)](https://app.codacy.com/manual/Marc-Alban/Creez-votre-premier-blog-en-PHP?utm_source=github.com&utm_medium=referral&utm_content=Marc-Alban/Creez-votre-premier-blog-en-PHP&utm_campaign=Badge_Grade_Settings)
+# ✍️ PHP Professional Blog
 
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-Project 5 of my course PHP / Symfony application developer at OpenClassrooms. Creation of a Blog via an object-oriented MVC architecture.
+> Un blog professionnel complet développé en **PHP pur** (sans framework) utilisant l'architecture **MVC**.
 
-Context That's it, you took the plunge! The world of web development with PHP is at your fingertips and you need visibility to be able to convince your future employers / clients at a glance. You are a PHP developer, so now is the time to show your talents through a blog in your colors.
+Ce projet a été réalisé dans le but de démontrer mes compétences en développement backend PHP. Il comprend une partie publique pour les visiteurs et un espace d'administration sécurisé pour la gestion des articles et des commentaires.
 
-Description of need The project is therefore to develop your professional blog. This website is broken down into two main groups of pages:
+## 🚀 Fonctionnalités
 
-The Bootstrap theme used was created by Start Bootstrap.
+*   **Visiteurs :**
+    *   Consultation des articles (blog posts).
+    *   Formulaire de contact fonctionnel.
+    *   Ajout de commentaires (soumis à validation).
+*   **Administration (Sécurisée) :**
+    *   Création, modification et suppression d'articles.
+    *   Modération des commentaires (validation/rejet).
+    *   Système d'authentification robuste (prévention XSS, CSRF, Injection SQL).
 
-Installation:
-Step 1: Transfer the files to the web folder of your web server (usually "www /").
-Step 2: Create a database on your SGDB (MySQL) and import the sql / blog.sql file to create the different tables
-Step 3: In the config.ini file, modify the following parameters:
-host: 'mysql: host = DBAddress;
-dbname: dbname = DBName; (default mom = blog);
-login: 'userDB';
-password: passwordDB ';
-Important: Please fill in all the fields with your information in the same way as that provided in the example!
-Note: Your version of Php must be php 7.4
-"Composer" is used as an autoload, as well as the "Whoops" package for displaying errors.
+## 🛠️ Technologies Utilisées
+*   **Backend :** PHP (Architecture MVC)
+*   **Base de données :** MySQL
+*   **Frontend :** HTML5, CSS3, Bootstrap
+*   **Templating :** Twig (optionnel/selon implémentation)
+*   **Outils :** Composer
 
+## ⚙️ Installation
+1. Cloner le dépôt : `git clone https://github.com/Marc-Alban/php-professional-blog.git`
+2. Installer les dépendances : `composer install`
+3. Configurer la base de données (importer le script SQL fourni).
+4. Lancer le serveur local PHP ou utiliser WAMP/XAMPP/Docker.
